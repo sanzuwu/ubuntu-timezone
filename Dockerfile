@@ -32,7 +32,7 @@ RUN apt-get update
 #ssh端口
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-RUN ntpdate ntp.sjtu.edu.cn
+RUN ntpdate  ntp1.aliyun.com
 EXPOSE 22
 #将云监工启动脚本加入运行脚本/run.sh
 #RUN chmod +w /run.sh
