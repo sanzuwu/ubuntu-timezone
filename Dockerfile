@@ -30,9 +30,9 @@ RUN apt-get update
 #云监工端口
 #EXPOSE 4000
 #ssh端口
-RUN echo "5:9:1:1" | tzselect
-RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
-RUN ntpdate ntp.sjtu.edu.cn
+RUN echo "Asia/shanghai" > /etc/timezone
+#RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+#RUN ntpdate ntp.sjtu.edu.cn
 EXPOSE 22
 #将云监工启动脚本加入运行脚本/run.sh
 #RUN chmod +w /run.sh
