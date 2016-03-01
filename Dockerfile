@@ -34,6 +34,7 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 RUN ntpdate  ntp1.aliyun.com
 EXPOSE 22
+RUN echo "/bin/bash" >>/set_root_pw.sh
 #将云监工启动脚本加入运行脚本/run.sh
 #RUN chmod +w /run.sh
 #RUN echo "/app/crysadm/run.sh" >>/set_root_pw.sh
