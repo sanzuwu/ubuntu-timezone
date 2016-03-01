@@ -30,7 +30,7 @@ RUN apt-get update
 #云监工端口
 #EXPOSE 4000
 #ssh端口
-RUN echo "Asia/shanghai" > /etc/timezone
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 #RUN ntpdate ntp.sjtu.edu.cn
 EXPOSE 22
